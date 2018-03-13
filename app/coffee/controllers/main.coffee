@@ -5,13 +5,13 @@ app.controller 'MainCtrl', ($scope, T3Factory, $location, $routeParams) ->
     if $scope.game?.started is 'started'
       $scope.game.winner = checkUltimateWinner($scope.game)
       if $scope.game.winner
-        $scope.game.status = "Player #{$scope.game.winner} is the ultimate winner!"
+        $scope.game.status = "Player #{$scope.game.winner} should eat my ass!"
         $scope.game.turn = 3 # To prevent the game from continuing
 
       # Check for tie game
       if not $scope.game.winner and fullBoard($scope.game)
         $scope.game.tie = true
-        $scope.game.status = "OMG -- It's a tie!"
+        $scope.game.status = "wow your really that bad? its a tie"
 
   , true
 
