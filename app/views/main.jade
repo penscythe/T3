@@ -41,10 +41,10 @@
       button(ng-show="game.winner > 0 || game.tie", ng-click='rematch()') Rematch!
 
 .row.statusbar.panel(ng-show="starting() && is_pending()")
-  p Challenge accepted!
+  p You've Found a Challenger!
 
 .row.statusbar.panel(ng-show="(is_pending() || !game) && !starting()")
-  p Send this link to your friend
+  p Go to this link to watch a replay
   input(type="text", value="{{gameURL}}")
   button.large(ng-click="homepage()") Go Back
 
